@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../pictures/logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instalación de GLPI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Instalación de GLPI</h1>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="https://plugins.glpi-project.org/#/">plugins</a></li>              
+                <li><a href="https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz">Descarga</a></li>
+                <li><a href="precios.html">Precios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 id="Requisitos">Requisitos Previos</h2>
+        <ul>
+            <li>Servidor web (Apache, Nginx, etc.)</li>
+            <li>Base de datos (MySQL, MariaDB, PostgreSQL)</li>
+            <li>PHP (versión 7.x recomendada)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Descarga de GLPI</h2>
+        <p>Descarga la última versión de GLPI desde el sitio web oficial o desde un repositorio de código abierto.</p>
+
+        <li><a href="https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz">Descarga</a></li>
+        
+    </section>
+
+    <section>
+        <h2 id="Instalación">Instalación</h2>
+        <ol>
+            <li>Descomprime el archivo descargado en el directorio de tu servidor web.</li>
+            <li>Crea una base de datos para GLPI en tu sistema de gestión de bases de datos.</li>
+            <li>Configura los permisos de los archivos y carpetas de GLPI según las recomendaciones del manual de instalación.</li>
+            <li>Accede a la URL donde has instalado GLPI desde un navegador web.</li>
+            <li>Sigue el asistente de instalación, proporcionando la información solicitada (ubicación de la base de datos, credenciales, etc.).</li>
+            <li>Una vez completada la instalación, elimina el directorio de instalación (<code>install/</code>) por motivos de seguridad.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Instalación de GLPI</p>
+    </footer>
+</body>
+</html>
